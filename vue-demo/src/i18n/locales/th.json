@@ -1,0 +1,10 @@
+{
+    "buttonLogin": {
+        "login": "เข้าสู่ระบบ",
+        "logout": "ออกจากระบบ"
+    },
+    "loginFormLabel": {
+        "username": "ชื่อผู้ใช้ระบบ",
+        "password": "รหัสผู้ใช้ระบบ"
+    }
+}

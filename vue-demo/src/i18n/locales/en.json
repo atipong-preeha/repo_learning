@@ -1,0 +1,10 @@
+{
+    "buttonLogin": {
+        "login": "Log In",
+        "logout": "Log Out"
+    },
+    "loginFormLabel" :{
+        "username": "Username",
+        "password": "Password"
+    }
+}
