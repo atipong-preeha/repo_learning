@@ -12,7 +12,7 @@ export function setupI18n(options = { locale: 'en' }) {
 
 export function setI18nLanguage(i18n, locale) {
   if (i18n.mode === 'legacy') {
-    i18n.global.locale = locale
+    i18n.global.locale.value = locale
   } else {
     i18n.global.locale.value = locale
   }

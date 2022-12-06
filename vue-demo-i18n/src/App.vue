@@ -36,7 +36,7 @@ import HelloWorld from './components/HelloWorld.vue'
               <RouterLink to="/" class="nav-link active" aria-current="page" >{{ $t('navbar.homeLink') }}</RouterLink>
             </li>
             <li class="nav-item">
-              <RouterLink to="/about" class="nav-link active" >{{ $t('navbar.aboutLink') }}</RouterLink>
+              <RouterLink :to="'/about'" class="nav-link active" >{{ $t('navbar.aboutLink') }}</RouterLink>
             </li>
          
           </ul>
@@ -62,6 +62,7 @@ export default {
   components : {
     TheLanguagePickerVue : TheLanguagePickerVue
   }
+
 }
 </script>
 
