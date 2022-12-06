@@ -1,0 +1,13 @@
+{
+    "home": {
+        "content": "這是一個主頁",
+        "hello" : "你好世界 !!!"
+    },
+    "about": {
+        "content": "這是一個關於頁面"
+    },
+    "navbar": {
+        "homeLink": "主頁",
+        "aboutLink": "關於"
+    }
+}

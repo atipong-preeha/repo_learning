@@ -1,0 +1,13 @@
+{
+    "home": {
+        "content": "This is an home page",
+        "hello" : "Hello World !!!"
+    },
+    "about": {
+        "content": "This is an about page"
+    },
+    "navbar": {
+        "homeLink": "Home",
+        "aboutLink": "about"
+    }
+}

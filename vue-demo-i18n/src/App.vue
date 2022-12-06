@@ -5,20 +5,66 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+    <!-- <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />-->
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+    <!-- <div class="wrapper">
+      <HelloWorld msg="You did it!" /> 
+      <nav class="navbar navbar-expand-lg bg-primary">
+        <ul class="navbar-nav">
+          <ui class="nav-item">
+            <RouterLink to="/">Home</RouterLink>
+          </ui>
+        </ul>
+        <ul>
+          <ui>
+            <RouterLink to="/about">About</RouterLink>
+          </ui>
+        </ul>
       </nav>
-    </div>
-  </header>
+    </div> -->
 
-  <RouterView />
+    <nav class="navbar navbar-dark navbar-expand-lg bg-primary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <RouterLink to="/" class="nav-link active" aria-current="page" >{{ $t('navbar.homeLink') }}</RouterLink>
+            </li>
+            <li class="nav-item">
+              <RouterLink to="/about" class="nav-link active" >{{ $t('navbar.aboutLink') }}</RouterLink>
+            </li>
+         
+          </ul>
+        </div>
+        <div><TheLanguagePickerVue></TheLanguagePickerVue></div>
+      </div>
+    </nav>
+
+
+
+  </header>
+  <main>
+    <RouterView />
+  </main>
+  
 </template>
+
+
+<script>
+import TheLanguagePickerVue from '@/components/TheLanguagePicker.vue';
+
+export default {
+  components : {
+    TheLanguagePickerVue : TheLanguagePickerVue
+  }
+}
+</script>
+
 
 <style scoped>
 header {
@@ -80,6 +126,6 @@ nav a:first-of-type {
 
     padding: 1rem 0;
     margin-top: 1rem;
-  }
+  } 
 }
 </style>
