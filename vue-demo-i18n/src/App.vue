@@ -36,9 +36,11 @@ import HelloWorld from './components/HelloWorld.vue'
               <RouterLink to="/" class="nav-link active" aria-current="page" >{{ $t('navbar.homeLink') }}</RouterLink>
             </li>
             <li class="nav-item">
-              <RouterLink :to="'/about'" class="nav-link active" >{{ $t('navbar.aboutLink') }}</RouterLink>
+              <RouterLink :to="'/'+$i18n.locale+'/about'" class="nav-link active" >{{ $t('navbar.aboutLink') }}</RouterLink>
             </li>
-         
+            <li class="nav-item">
+              <RouterLink :to="'/'+locale+'/contact'" class="nav-link active" >{{ $t('navbar.contactLink') }}</RouterLink>
+            </li>
           </ul>
         </div>
         <div><TheLanguagePickerVue></TheLanguagePickerVue></div>
@@ -57,11 +59,20 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <script>
 import TheLanguagePickerVue from '@/components/TheLanguagePicker.vue';
+import { useI18n } from 'vue-i18n';
+
 
 export default {
   components : {
     TheLanguagePickerVue : TheLanguagePickerVue
-  }
+  },
+  setup(){
+    const { locale } = useI18n();
+    return{
+      locale
+    };
+  },
+
 
 }
 </script>

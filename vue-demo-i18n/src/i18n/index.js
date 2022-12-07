@@ -43,5 +43,6 @@ export default createI18n({
   legacy: false, // if want to switch to the new Composition API set false
   fallbackLocale: "en",
   globalInjection: true,
+  //sync:false,
   messages: { en },
 });

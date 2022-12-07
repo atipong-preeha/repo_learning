@@ -6,8 +6,12 @@
     "about": {
         "content": "This is an about page"
     },
+    "contactUs": {
+        "content": "This is an contact us page"
+    },
     "navbar": {
         "homeLink": "Home",
-        "aboutLink": "about"
+        "aboutLink": "about",
+        "contactLink": "Contact"
     }
 }
