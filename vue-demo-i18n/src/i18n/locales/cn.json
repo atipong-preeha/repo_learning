@@ -6,8 +6,12 @@
     "about": {
         "content": "這是一個關於頁面"
     },
+    "contactUs": {
+        "content": "這是一個聯繫我們的頁面"
+    },
     "navbar": {
         "homeLink": "主頁",
-        "aboutLink": "關於"
+        "aboutLink": "關於",
+        "contactLink": "聯繫我們"
     }
 }
